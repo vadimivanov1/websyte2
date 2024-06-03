@@ -1,0 +1,30 @@
+body {
+    background-image: url('img/2222.jpg'); /* Виправлено шлях до зображення */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Times New Roman", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.resize-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+a {
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію */
+    display: inline-block; /* Додаємо display: inline-block для коректного працювання translateX */
+}
+
+/* Зміщуємо елемент вліво при наведенні курсору */
+a:hover {
+    transform: translateX(-5px); /* Змінюємо значення translateX на бажану величину */
+}
